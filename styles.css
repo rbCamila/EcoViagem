@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+body{
+    background: linear-gradient(to top,transparent,rgba(239,46,28,.5)), url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    margin: 3.125rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    display: block;
+    width: 50rem;
+    height: 25rem;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 1.875em;
+    padding: 3.125em;
+    color: #fff;
+    margin: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor{
+        width: 20.5rem;
+        height: 32rem;
+        background-color: rgba(0,0,0,.7);
+        border-radius: 1.875rem;
+        padding: 1.563rem;
+        color: #fff;
+        margin: 1rem;
+    }
+    .contenedor .contenido .left{
+        width: 80%;
+        padding-left: 1.5rem;
+    }
+    .contenedor .contenido .right{
+        width: 20%;
+        display: flex;
+        justify-content: right;
+        text-align: left;
+    }
+    .contenedor .contenido .right .popular{
+        display: none;
+    }
+    
+  }
+  @media only screen and (max-width: 890px) { 
+    
+  }
+header{
+    overflow: hidden;
+    padding: 30px 20px 30px;
+}
+
+header h1{
+    float: left;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    margin: 0 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 33px;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: .5s;
+    border-radius: 20px;
+}
+header nav ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.contenedor .contenido{
+    display: flex;
+    position: relative;
+}
+.contenido .linea-decorativa{
+    position: absolute;
+    height: 12.5rem;
+    width: 6.25rem;
+    border-left: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contenido .linea-decorativa .circulo{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: -9px;
+}
+
+.contenedor .contenido .left{
+    width: 100%;
+    padding-left: 50px;
+}
+.contenedor .contenido .left h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.contenedor .contenido .left p{
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+.contenedor .contenido .left button{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    transition: .5s;
+    cursor: pointer;
+}
+.contenedor .contenido .left button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.contenedor .contenido .left .redes{
+    font-size: 12px;
+    width: fit-content;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor .contenido .left .redes a{
+    text-decoration: none;
+    color: #fff;
+}
+.contenedor .contenido .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
+}
+.contenedor .contenido .right .popular{
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+.contenedor .contenido .right .contenedor-fotos{
+    display: grid;
+}
+
+.contenedor .contenido .right .contenedor-fotos img{
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.contenedor-tb{
+    display: block;
+    width: 60rem;
+    height: 42rem;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 1.875em;
+    padding: 3em;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .contenido{
+    display: flex;
+    position: relative;
+}
+
+
+table td {
+    width: 55rem;
+}
+
+table td h2{
+    align-items: center;
+    justify-content:center;
+    padding-left: 6rem;
+}
+
+table td h1{
+    font-size:1.6rem;
+    font-style: bold;
+    justify-content:center;    
+    padding-left: 1rem;
+}
+
+table td .tpm {
+    width: 45rem;
+}
+
+
+table h2{
+    font-size:1.6rem;
+    font-style: bold;
+    justify-content:center;
+}
+
