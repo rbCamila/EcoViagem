@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles.css">
 
-    <title>Parque Nacional Torres del Paine - EcoViagem</title>
+    <title>Contacto - EcoViagem</title>
 </head>
 <body>
     <header>
@@ -22,28 +22,28 @@
             </ul>
         </nav>
     </header>
-    <section class="contenedor contenedor-info">
+    <section class="contenedor">
         <div class="contenido">
-            <div class="linea-decorativa">
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-                <div class="circulo"></div>
-            </div>
-            <div class="left-info">
-                <h2>Parque Nacional Torres del Paine, Chile</h2>
-                <p>El Parque Nacional Torres del Paine está ubicado en la región de Magallanes y de la Antártica Chilena, en el sur de Chile. Es uno de los destinos naturales más icónicos y espectaculares de América del Sur, conocido por sus paisajes de montañas imponentes, glaciares majestuosos y una variada vida silvestre.</p>
-                
-                <p>Glaciares: Los glaciares Grey y Dickson son atracciones imperdibles. Los visitantes pueden acercarse a los glaciares en embarcaciones o realizar caminatas guiadas.</p>
-                <p>Campamento Responsable: Promueve el acampar de manera responsable y el respeto por las regulaciones del parque para minimizar el impacto ambiental.</p>
-
-            </div>
-
-            <div class="right-info">
-                <img src="../img/ParquePaine.jpg" alt="">
-                <img src="../img/ParquePaine2.jpg" alt="">
-            </div>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                  <label class="required" for="name">Your name:</label><br />
+                  <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                  <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <label class="required" for="email">Your email:</label><br />
+                  <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                  <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <label class="required" for="message">Your message:</label><br />
+                  <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                  <span id="message_validation" class="error_message"></span>
+                </div>
+                  
+                  <input id="submit_button" type="submit" value="Send email" />
+              </form>
         </div>
-
     </section>
     <footer>
         <h1>EcoViagem</h1> 
