@@ -339,7 +339,7 @@ header nav ul li a:hover{
 .contenedor .contenido-2 .row input, textarea{
     background-color: rgba(255, 255, 255, 0.667);
     border-radius: 0.5em;
-    padding: 1rem;
+    padding: 0.35rem;
 }
 
 .contenedor .contenido-2 .row input #submit_button{
