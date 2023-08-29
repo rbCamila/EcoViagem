@@ -10,7 +10,8 @@ body{
     background: linear-gradient(to top,transparent,rgba(239,46,28,.5)), url(img/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
-    margin: 3.125rem;
+    width: auto;
+    margin: 3.125rem 3.125rem 0 3.125rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -18,12 +19,57 @@ body{
 .contenedor{
     display: block;
     width: 50rem;
-    height: 25rem;
+    height: fit-content;
     background-color: rgba(0,0,0,.7);
     border-radius: 1.875em;
     padding: 3.125em;
     color: #fff;
     margin: 1em;
+}
+
+.contenedor-info{
+    display: block;
+    width: 50rem;
+    height:fit-content;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 1.875rem;
+    padding: 3.125rem;
+    color: #fff;
+    margin: 1rem;
+}
+
+.contenedor-info .contenido-info .right-info{
+    width: 25rem;
+    height: fit-content;
+    display: flex;
+    text-align: right;
+}  
+
+.contenedor-info .right-info img{
+    height: 15rem;
+    width: 100%;
+    padding: 2.5rem 25px 0 0.25rem;
+    border-radius: 0px 65px 0px 45px;
+}  
+
+.contenedor-info .left-info{
+    width: 100%;
+    padding-left: 50px;
+}
+.contenedor-info .left-info h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-info .left-info p{
+    margin-bottom: 30px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.contenedor-info .left-info strong{
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 480px) {
@@ -130,7 +176,7 @@ body{
     }  
   }
 
-  @media only screen and (max-width: 868px) {
+  @media only screen and (max-width: 830px) {
         body {
             width: 90%;
             justify-content: center;
@@ -193,6 +239,9 @@ body{
             margin-bottom: 60px;
             transition: .5s;
             cursor: pointer;
+        }
+        .contenedor .contenido .left button a:link, a:visited, a:active{
+            text-decoration:none;
         }
         .contenedor .contenido .left button:hover{
             background-color: #000;
@@ -356,10 +405,13 @@ header nav ul li a:hover{
 
 .contenedor .contenido .right .contenedor-fotos img{
     width: 100%;
-    margin: 0 10px;
+    height: max-content;
     border-radius: 10px;
 }
-
+.contenedor .contenido .left button a:link, a:visited, a:active{
+    text-decoration:none;
+    color: white;
+}
 .contenedor-tb{
     display: block;
     width: 60rem;
@@ -406,12 +458,11 @@ table h2{
 
 footer{
     display: fixed;
-    width: 90vh;
+    width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.7);
-    padding: 3.125em;
+    padding: 2.5rem 5rem 2.5rem 5rem;
     color: #fff;
-    margin: 1em;
 }
 
 footer h1{
